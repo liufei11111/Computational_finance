@@ -1,0 +1,3 @@
+function [thisCValue]= functionC(option,thisStepSpace,currSpot,currTime) 
+thisCValue=0.5*(option.Vol*option.Vol*thisStepSpace*thisStepSpace+...
+    (option.InterestRate-option.divident)*thisStepSpace)*(option.Expiry*1.0/option.timeStep);

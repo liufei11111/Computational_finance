@@ -1,0 +1,19 @@
+HW1 Computational Finance
+Carlos J. Arguello cja2119
+
+I used the open library gsl suggested
+in for Homework, to generate the cdf 
+and the random walks.
+
+If gsl libraries are compiled,
+then just type:
+
+-make all
+
+and that should recompile the files.
+
+The executable is:
+
+HW1_Carlos_Arguello
+
+Thank you 

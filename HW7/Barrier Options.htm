@@ -1,0 +1,680 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- saved from url=(0108)http://www.global-derivatives.com/index.php/component/content/article/13-options-database/13-barrier-options -->
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-gb" lang="en-gb"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<meta name="google-site-verification" content="dMDDcyDkEEbp1oHjpiQAtTJNlGNfMYJO2Pb6aiQY-D0">
+
+  <!--<base href="http://www.global-derivatives.com/index.php/component/content/article/13-options-database/13-barrier-options">--><base href=".">
+  
+  <meta name="robots" content="index, follow">
+  <meta name="keywords" content="Global Derivatives, Finance, Options, Futures, Derivatives, Exotics, Exotic Options, CDO, CMO, American, European, Bermudan, Binary, Barrier, Digital, Pricing Models, VBA, C++, CQF, CFA, FRM, PRM, Masters, Doctorate, Quantitative Finance, Financial Engineering, Option pricing">
+  <meta name="title" content="Barrier Options">
+  <meta name="author" content="Administrator">
+  <meta name="description" content="Global Derivatives - For the expansion of all things quantitative finance, financial engineering and derivatives.">
+  <meta name="generator" content="Joomla! 1.5 - Open Source Content Management">
+  <title>Barrier Options</title>
+  <link href="http://www.global-derivatives.com/templates/1sr_first/favicon.ico" rel="shortcut icon" type="image/x-icon">
+  <script type="text/javascript" async="" src="./Barrier Options_files/ga.js"></script><script type="text/javascript" src="./Barrier Options_files/mootools.js"></script>
+  <script type="text/javascript" src="./Barrier Options_files/caption.js"></script>
+
+
+
+
+<script type="text/javascript" src="./Barrier Options_files/stylechanger.js"></script>
+
+<link rel="stylesheet" href="./Barrier Options_files/template.css" type="text/css">
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-27401684-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+<script type="text/javascript"></script><link rel="stylesheet" type="text/css" href="./Barrier Options_files/ndhui.css"></head>
+
+<body style="font-size: 75%;"><script type="text/javascript" language="javascript" src="./Barrier Options_files/ndhui.js"></script>
+
+<div id="wrap">
+
+	<div class="inside">
+
+    	<div id="toolbar">
+
+        	<div id="toolbar_inside">
+
+        		<div id="syndicate"></div>
+            	<div id="search"><form action="http://www.global-derivatives.com/index.php/component/content/article/13-options-database/index.php" method="post">
+	<div class="search">
+		<input name="searchword" id="mod_search_searchword" maxlength="25" alt="Search" class="inputbox" type="text" size="25" value="Search Site...." onblur="if(this.value==&#39;&#39;) this.value=&#39;Search Site....&#39;;" onfocus="if(this.value==&#39;Search Site....&#39;) this.value=&#39;&#39;;">	</div>
+	<input type="hidden" name="task" value="search">
+	<input type="hidden" name="option" value="com_search">
+</form></div>
+
+                <div id="fontsize"><script type="text/javascript">
+
+				//<![CDATA[
+
+					document.write('<a href="/index.php" title="gro&szlig;e Schrift" onclick="bigFontSize(); return false;"><img src="/templates/1sr_first/images/font_size_big.png" alt="gro&szlig;e Schrift" /></a>');
+
+					document.write('<a href="/index.php" title="Schrift zur&uuml;cksetzen" onclick="resetFontSize(); return false;"><img src="/templates/1sr_first/images/font_size_normal.png" alt="Schrift zur&uuml;cksetzen" /></a>');
+
+					document.write('<a href="/index.php" title="kleine Schrift" onclick="smallFontSize(); return false;"><img src="/templates/1sr_first/images/font_size_small.png" alt="kleine Schrift" /></a></p>');
+
+				//]]>
+
+		</script><a href="http://www.global-derivatives.com/index.php" title="große Schrift" onclick="bigFontSize(); return false;"><img src="./Barrier Options_files/font_size_big.png" alt="große Schrift"></a><a href="http://www.global-derivatives.com/index.php" title="Schrift zurücksetzen" onclick="resetFontSize(); return false;"><img src="./Barrier Options_files/font_size_normal.png" alt="Schrift zurücksetzen"></a><a href="http://www.global-derivatives.com/index.php" title="kleine Schrift" onclick="smallFontSize(); return false;"><img src="./Barrier Options_files/font_size_small.png" alt="kleine Schrift"></a><p></p></div>
+
+            </div>
+
+        </div>
+
+        <div id="header">
+
+        	<div id="logo">
+
+    	<a href="http://www.global-derivatives.com/" title="Home"><img src="./Barrier Options_files/logo.gif" alt="Global Derivatives
+" title="Global Derivatives
+"></a>
+
+			</div>
+            
+<div id="logo-banner">
+	<div id="bread">		<div class="moduletable">
+					<!--/* OpenX Javascript Tag v2.8.6-rc2 */-->
+
+<script type="text/javascript"><!--//<![CDATA[
+   var m3_u = (location.protocol=='https:'?'https://d1.openx.org/ajs.php':'http://d1.openx.org/ajs.php');
+   var m3_r = Math.floor(Math.random()*99999999999);
+   if (!document.MAX_used) document.MAX_used = ',';
+   document.write ("<scr"+"ipt type='text/javascript' src='"+m3_u);
+   document.write ("?campaignid=176221&amp;target=_blank");
+   document.write ('&amp;cb=' + m3_r);
+   if (document.MAX_used != ',') document.write ("&amp;exclude=" + document.MAX_used);
+   document.write (document.charset ? '&amp;charset='+document.charset : (document.characterSet ? '&amp;charset='+document.characterSet : ''));
+   document.write ("&amp;loc=" + escape(window.location));
+   if (document.referrer) document.write ("&amp;referer=" + escape(document.referrer));
+   if (document.context) document.write ("&context=" + escape(document.context));
+   if (document.mmm_fo) document.write ("&amp;mmm_fo=1");
+   document.write ("'><\/scr"+"ipt>");
+//]]>--></script><script type="text/javascript" src="./Barrier Options_files/ajs.php"></script><a href="http://d1.openx.org/ck.php?oaparams=2__bannerid=826543__zoneid=0__OXLCA=1__cb=dd69d3390b__r_id=5987fa64a82370dd90f6dd34fe655044__r_ts=mefcd6__oadest=http%3A%2F%2Fwww.cqf.com%2Fadmissions%2Finformation-session-dates%3Futm_source%3DGloDerivatives.big.banner%26utm_medium%3Dbanner%26utm_content%3DGloDerivatives.big.banner%26utm_campaign%3DGloDerivatives.big.banner" target="_blank"><img src="./Barrier Options_files/e6faa0a2fc670ab92544563dfb7f6096.gif" width="450" height="70" alt="" title="" border="0"></a><div id="beacon_dd69d3390b" style="position: absolute; left: 0px; top: 0px; visibility: hidden;"><img src="./Barrier Options_files/lg.php" width="0" height="0" alt="" style="width: 0px; height: 0px;"></div>
+<noscript>&lt;a href='http://d1.openx.org/ck.php?n=a40400a5&amp;amp;cb=INSERT_RANDOM_NUMBER_HERE' target='_blank'&gt;&lt;img src='http://d1.openx.org/avw.php?campaignid=176221&amp;amp;cb=INSERT_RANDOM_NUMBER_HERE&amp;amp;n=a40400a5' border='0' alt='' /&gt;&lt;/a&gt;</noscript>		</div>
+	</div>
+</div>
+
+
+            <div id="news">
+            
+            	<div class="newsinside">
+                
+
+            		
+
+
+                </div>
+
+            </div>
+
+		</div>
+
+        <div id="topmenu">		<div class="moduletable">
+					<ul id="mainlevel-nav"><li><a href="http://www.global-derivatives.com/" class="mainlevel-nav">Home</a></li><li><a href="http://www.global-derivatives.com/index.php/news-topmenu-19" class="mainlevel-nav">Masters Program Database</a></li><li><a href="http://www.global-derivatives.com/options/o-types.php" class="mainlevel-nav">Options Database</a></li><li><a href="http://www.global-derivatives.com/spreadsheets.php" class="mainlevel-nav">Spreadsheet Models</a></li><li><a href="http://www.global-derivatives.com/forum" target="_blank" class="mainlevel-nav">Forums</a></li><li><a href="http://www.global-derivatives.com/index.php/contact-us-topmenu-18" class="mainlevel-nav">Contact Us</a></li></ul>		</div>
+	</div>
+
+		<div id="bread">		<div class="moduletable">
+					<div align="center">
+<!--/* OpenX Javascript Tag v2.8.5-rc7 */-->
+
+<script type="text/javascript"><!--//<![CDATA[
+   var m3_u = (location.protocol=='https:'?'https://d1.openx.org/ajs.php':'http://d1.openx.org/ajs.php');
+   var m3_r = Math.floor(Math.random()*99999999999);
+   if (!document.MAX_used) document.MAX_used = ',';
+   document.write ("<scr"+"ipt type='text/javascript' src='"+m3_u);
+   document.write ("?campaignid=176219&amp;target=_blank");
+   document.write ('&amp;cb=' + m3_r);
+   if (document.MAX_used != ',') document.write ("&amp;exclude=" + document.MAX_used);
+   document.write (document.charset ? '&amp;charset='+document.charset : (document.characterSet ? '&amp;charset='+document.characterSet : ''));
+   document.write ("&amp;loc=" + escape(window.location));
+   if (document.referrer) document.write ("&amp;referer=" + escape(document.referrer));
+   if (document.context) document.write ("&context=" + escape(document.context));
+   if (document.mmm_fo) document.write ("&amp;mmm_fo=1");
+   document.write ("'><\/scr"+"ipt>");
+//]]>--></script><script type="text/javascript" src="./Barrier Options_files/ajs(1).php"></script><a href="http://d1.openx.org/ck.php?oaparams=2__bannerid=449471__zoneid=0__OXLCA=1__cb=5c8bbd6ad9__r_id=4d04bb8713e8411483d8fda3874fb33e__r_ts=mefcd7__oadest=http%3A%2F%2Fuk.sitestat.com%2Fcity-cass%2Fext%2Fs%3Fclickin.msc.banner.globalderivatives.finance.general%26amp%3Bns_campaign%3Dfinance%26amp%3Bns_mchannel%3Dmsc.banner%26amp%3Bns_source%3Dglobalderivatives%26amp%3Bns_linkname%3Dgeneral%26amp%3Bns_fee%3D1%26amp%3Bns_type%3Dclickin%26amp%3Bns_url%3Dwww.cass.city.ac.uk%2Fmasters" target="_blank"><img src="./Barrier Options_files/f55bc02e5cd1f15fc14d0d6e9789fab4.gif" width="450" height="70" alt="" title="" border="0"></a><div id="beacon_5c8bbd6ad9" style="position: absolute; left: 0px; top: 0px; visibility: hidden;"><img src="./Barrier Options_files/lg(1).php" width="0" height="0" alt="" style="width: 0px; height: 0px;"></div>
+<noscript>&lt;a href='http://d1.openx.org/ck.php?n=af3e08ca&amp;cb=INSERT_RANDOM_NUMBER_HERE' target='_blank'&gt;&lt;img src='http://d1.openx.org/avw.php?campaignid=176219&amp;cb=INSERT_RANDOM_NUMBER_HERE&amp;n=af3e08ca' border='0' alt='' /&gt;&lt;/a&gt;</noscript>
+</div>		</div>
+	</div>
+
+	
+
+            
+
+        <div id="left">		<div class="moduletable">
+					<!-- JoomlaStatsActivated -->		</div>
+			<div class="moduletable">
+					<h3>Menu</h3>
+					<ul class="menu"><li class="parent item36"><a href="http://www.global-derivatives.com/index.php/further-education-othermenu-36"><span>Further Education</span></a></li><li class="item41"><a href="http://www.global-derivatives.com/index.php/pricing-models-othermenu-41"><span>Pricing Models</span></a></li><li class="item33"><a href="http://www.global-derivatives.com/index.php/financial-mathematics-othermenu-33"><span>Financial Mathematics</span></a></li><li class="item39"><a href="http://www.global-derivatives.com/index.php/quantitative-finance-101s-othermenu-39"><span>Quantitative Finance 101s</span></a></li><li class="item42"><a href="http://www.global-derivatives.com/index.php/book-reviews-othermenu-42"><span>Book Reviews</span></a></li><li class="item43"><a href="http://www.global-derivatives.com/index.php/working-papers-othermenu-43"><span>Working Papers</span></a></li><li class="item49"><a href="http://www.global-derivatives.com/forum/index.php?board=16.0" target="_blank"><span>Job Postings</span></a></li></ul>		</div>
+	</div>
+
+        <div id="content_big"><div class="ininside"><table class="contentpaneopen">
+<tbody><tr>
+		<td class="contentheading" width="100%">
+					Barrier Options			</td>
+						<td align="right" width="100%" class="buttonheading">
+		<a href="http://www.global-derivatives.com/index.php/component/content/article/13-options-database/13-barrier-options?format=pdf" title="PDF" onclick="window.open(this.href,&#39;win2&#39;,&#39;status=no,toolbar=no,scrollbars=yes,titlebar=no,menubar=no,resizable=yes,width=640,height=480,directories=no,location=no&#39;); return false;" rel="nofollow">PDF&nbsp;</a>		</td>
+		
+				<td align="right" width="100%" class="buttonheading">
+		<a href="http://www.global-derivatives.com/index.php/component/content/article/13-options-database/13-barrier-options?tmpl=component&print=1&page=" title="Print" onclick="window.open(this.href,&#39;win2&#39;,&#39;status=no,toolbar=no,scrollbars=yes,titlebar=no,menubar=no,resizable=yes,width=640,height=480,directories=no,location=no&#39;); return false;" rel="nofollow">|&nbsp;Print&nbsp;|</a>		</td>
+		
+				<td align="right" width="100%" class="buttonheading">
+		<a href="http://www.global-derivatives.com/index.php/component/mailto/?tmpl=component&link=aHR0cDovL3d3dy5nbG9iYWwtZGVyaXZhdGl2ZXMuY29tL2luZGV4LnBocC9jb21wb25lbnQvY29udGVudC9hcnRpY2xlLzEzLW9wdGlvbnMtZGF0YWJhc2UvMTMtYmFycmllci1vcHRpb25z" title="E-mail" onclick="window.open(this.href,&#39;win2&#39;,&#39;width=400,height=350,menubar=yes,resizable=yes&#39;); return false;">&nbsp;E-mail</a>		</td>
+					</tr>
+</tbody></table>
+
+<table class="contentpaneopen">
+
+
+
+<tbody><tr>
+<td valign="top">
+<p>Barrier options are path-dependent options which come in many flavours and forms, but their key characteristic is that these types of options are either initiated or exterminated upon reaching a certain barrier level; that is, they are either knocked in or knocked out.</p>
+<p>&nbsp;</p>
+
+
+
+<p align="center"><a href="http://www.global-derivatives.com/index.php/component/content/article/13-options-database/13-barrier-options#rebates"><br></a></p>
+<p align="center"><a href="http://www.global-derivatives.com/index.php/component/content/article/13-options-database/13-barrier-options#rebates">Rebates</a> || <a href="http://www.global-derivatives.com/index.php/component/content/article/13-options-database/13-barrier-options#ClosedForm">Single    Barrier Analytic Closed Form</a> || <a href="http://www.global-derivatives.com/index.php/component/content/article/13-options-database/13-barrier-options#Continuity">Continuity Adjustment</a> || <a href="http://www.global-derivatives.com/index.php/component/content/article/13-options-database/13-barrier-options#FD">Finite Differences</a> || <a href="http://www.global-derivatives.com/index.php/component/content/article/13-options-database/13-barrier-options#binomial" target="_self">Binomial    Method</a> || <a href="http://www.global-derivatives.com/index.php/component/content/article/13-options-database/13-barrier-options#trinomial" target="_self">Trinomial Method</a> || <a href="http://www.global-derivatives.com/index.php/component/content/article/13-options-database/13-barrier-options#MCS">Monte    Carlo Simulation</a> || <a href="http://www.global-derivatives.com/index.php/component/content/article/13-options-database/13-barrier-options#JumpDiffusion">Jump Diffusion</a> || <a href="http://www.global-derivatives.com/index.php/component/content/article/13-options-database/13-barrier-options#OtherLattice">Other    Lattice Methods</a> || <a href="http://www.global-derivatives.com/index.php/component/content/article/13-options-database/13-barrier-options#Other">Other Methods</a> || <a href="http://www.global-derivatives.com/index.php/component/content/article/13-options-database/13-barrier-options#KnownNames"> Known Names &amp; Variants</a> || <a href="http://www.global-derivatives.com/index.php/component/content/article/13-options-database/13-barrier-options#ref" target="_self">References</a> || Pricing Models</p>
+<p align="center">&nbsp;</p>
+<p align="left"><a name="Intro" title="Intro"></a>Barrier options are path-dependent options    which come in many flavours and forms, but their key characteristic is that    these types of options are either initiated or exterminated upon reaching a    certain barrier level; that is, they are either knocked in or knocked out.</p>
+<p align="left">&nbsp;</p>
+<p align="left">Having mentioned that barriers come in all shapes and sizes, we    consider the most basic type of barrier option - the single barrier.</p>
+<p align="left">&nbsp;</p>
+<p align="left">This option comes in 8 flavours, each with its own characteristics,    which we outline below:</p>
+<p align="left">Types:</p>
+<p align="left">1. Up &amp; In<br> 2. Up &amp; Out<br> 3. Down &amp; In<br> 4. Down &amp; Out<br> <br> Where each type can take the form of a call or a put, giving us a total of 8    single barrier types. An "In" barrier means that a barrier becomes    active once crossing a particular barrier level; for example, an Up &amp; In    barrier becomes active when the underlying price hits a barrier from below.</p>
+<p align="left">Barriers also come in various other forms including double barriers,    parisians, and partial time barriers, which can all eventually be found in their    respective pages. Here, we discuss the various methods of pricing single barriers.</p>
+<p align="left">Barriers can take either American or European forms, and despite    its seemingly complex payoffs, they are widely used in the markets and are generally    cheaper than plain vanilla type options.</p>
+<p align="left">&nbsp;</p>
+<p align="left"><em><a name="rebates" title="rebates"></a>Rebates</em></p>
+<p align="left"><em><br></em></p>
+<p align="left">Rebates are pre-defined payouts which are sometimes given when    a barrier option expires, and although barriers with rebates are not traded    as much as barriers without, we will consider rebates in a later section.<strong><br> <br> Pricing:</strong></p>
+<p align="left"><strong><br></strong></p>
+<p align="left"><strong><a name="ClosedForm" title="ClosedForm"></a>1) Analytical Closed Form (Merton,    Reiner &amp; Rubinstein) 1973</strong></p>
+<p align="left"><strong><br></strong></p>
+<p align="left">Since barrier options were traded on the OTC in the late 60s they    have been used extensively to manage risks related to commodities, FX and interest    rate exposures.</p>
+<p align="left">&nbsp;</p>
+<p align="left">Merton (1973) provided the first analytical formula for a down    and out call option which was followed by the more detailed paper by Reiner    &amp; Rubinstein (1991) which provides the formulas for all 8 types of barriers.    Haug (1998) gives a generalisation of the set of formulas provided by Reiner    &amp; Rubinstein (RR); both of which we will consider.</p>
+<p align="left">&nbsp;</p>
+<p align="left">We consider the 16 single barrier options as follows, given by    RR under a Black &amp; Scholes framework.</p>
+<p align="left">&nbsp;</p>
+<p align="left">When the barrier level is lower than or equal to the strike price,    the following values are given:</p>
+<p align="left"><strong><em>Call Values:</em></strong></p>
+<p align="center"><img src="./Barrier Options_files/barrier-single-cdi-1.jpg" border="0" width="409" height="46"></p>
+<p align="center"><img src="./Barrier Options_files/barrier-single-cdo-1.jpg" border="0" width="250" height="22"></p>
+<p align="center"><img src="./Barrier Options_files/barrier-single-cui-1.jpg" border="0" width="118" height="24"></p>
+<p align="center"><img src="./Barrier Options_files/barrier-single-cuo-1.jpg" border="0" width="229" height="24"></p>
+<p align="left"><strong><em>Put Values: </em></strong></p>
+<p align="center"><img src="./Barrier Options_files/barrier-single-puo-1.jpg" border="0" width="394" height="87"></p>
+<p align="center"><img src="./Barrier Options_files/barrier-single-pui-1.jpg" border="0" width="272" height="27"></p>
+<p align="center"><img src="./Barrier Options_files/barrier-single-pdi-1.jpg" border="0" width="525" height="84"></p>
+<p align="center"><img src="./Barrier Options_files/barrier-single-pdo-1.jpg" border="0" width="297" height="26"></p>
+<p align="left">When the barrier is greater than the strike price, the following    formulae are used:</p>
+<p align="left">&nbsp;</p>
+<p align="left"><strong><em>Call Values:</em></strong></p>
+<p align="center"><img src="./Barrier Options_files/barrier-single-cdo-2.jpg" border="0" width="331" height="72"></p>
+<p align="center"><img src="./Barrier Options_files/barrier-single-cdi-2.jpg" border="0" width="258" height="22"></p>
+<p align="center"><img src="./Barrier Options_files/barrier-single-cuo-2.jpg" border="0" width="122" height="24"></p>
+<p align="center"><img src="./Barrier Options_files/barrier-single-puo-1.jpg" border="0" width="394" height="87"></p>
+<p align="center"><img src="./Barrier Options_files/barrier-single-pui-1.jpg" border="0" width="272" height="27"></p>
+<p align="center"><img src="./Barrier Options_files/barrier-single-cui-2.jpg" border="0" width="315" height="121"></p>
+<p align="left"><strong><em>Put Values: </em></strong></p>
+<p align="center"><img src="./Barrier Options_files/barrier-single-pui-2.jpg" border="0" width="486" height="53"></p>
+<p align="center"><img src="./Barrier Options_files/barrier-single-puo-2.jpg" border="0" width="272" height="27"></p>
+<p align="center"><img src="./Barrier Options_files/barrier-single-pdo-2.jpg" border="0" width="144" height="26"></p>
+<p align="center"><img src="./Barrier Options_files/barrier-single-pdi-2.jpg" border="0" width="154" height="26"></p>
+<p align="left">Where:</p>
+<p align="center"><img src="./Barrier Options_files/barrier-single-m.jpg" border="0" width="117" height="40"></p>
+<p align="center"><img src="./Barrier Options_files/barrier-single-y.jpg" border="0" width="171" height="59"></p>
+<p align="center"><img src="./Barrier Options_files/barrier-single-x1.jpg" border="0" width="157" height="58"></p>
+<p align="center"><img src="./Barrier Options_files/barrier-single-y1.jpg" border="0" width="157" height="58"></p>
+<p align="left">Where N(x) is the cumulative normal distribution of x, H is the    barrier value, S is the asset price, X is the strike price, <img src="./Barrier Options_files/call-bs.jpg" border="0" width="25" height="18" align="absbottom">and    <img src="./Barrier Options_files/put-bs.jpg" border="0" width="27" height="19" align="absbottom">are    the values of a European call and put option respectively under the Black-Scholes    framework.</p>
+<p align="left">&nbsp;</p>
+<p align="left">Haug handles the equations differently by using a set of standard    equations, and making use of binary variables in order to generalise the formula    for implementation. Both Haug &amp; RR formulae are the same, but merely presented    differently; the choice of use if up to the programmer, but we use Haug's method    for more versatile programming.</p>
+<p align="left">&nbsp;</p>
+<p align="left">Haug gives 6 standard formulas as follows: - We use similar notation    as Haug's text for generalisation.</p>
+<p align="left">&nbsp;</p>
+<p><img src="./Barrier Options_files/barrier-single-haug-A.jpg" border="0" width="266" height="24"></p>
+<p><img src="./Barrier Options_files/barrier-single-haug-B.jpg" border="0" width="270" height="24"></p>
+<p><strong><img src="./Barrier Options_files/barrier-single-haug-C.jpg" border="0" width="381" height="47"></strong></p>
+<p><strong><img src="./Barrier Options_files/barrier-single-haug-D.jpg" border="0" width="386" height="47"></strong></p>
+<p><strong><img src="./Barrier Options_files/barrier-single-haug-E.jpg" border="0" width="343" height="53"></strong></p>
+<p><strong><img src="./Barrier Options_files/barrier-single-haug-F.jpg" border="0" width="322" height="53"></strong></p>
+<p align="left">Where:</p>
+<table border="0" width="100%">
+<tbody>
+<tr>
+<td>
+<div><img src="./Barrier Options_files/barrier-single-haug-x1.jpg" border="0" width="168" height="51"></div>
+</td>
+<td>
+<div><img src="./Barrier Options_files/barrier-single-haug-x2.jpg" border="0" width="170" height="51"></div>
+</td>
+</tr>
+<tr>
+<td>
+<div><img src="./Barrier Options_files/barrier-single-haug-y1.jpg" border="0" width="188" height="53"></div>
+</td>
+<td>
+<div><img src="./Barrier Options_files/barrier-single-haug-y2.jpg" border="0" width="171" height="51"></div>
+</td>
+</tr>
+</tbody>
+</table>
+<table border="0" width="100%">
+<tbody>
+<tr>
+<td>
+<div><img src="./Barrier Options_files/barrier-single-haug-z.jpg" border="0" width="129" height="51"></div>
+</td>
+<td>
+<div><img src="./Barrier Options_files/barrier-single-haug-m.jpg" border="0" width="122" height="42"></div>
+</td>
+<td>
+<div><img src="./Barrier Options_files/barrier-single-haug-lambda.jpg" border="0" width="131" height="44"></div>
+</td>
+</tr>
+</tbody>
+</table>
+<p align="left">&nbsp;</p>
+<p align="left">K is the rebate which is paid out if the barrier has not been    knocked in during its life. Haug then gives the values of each of the barrier    options and their respective binary values.</p>
+<p align="left">&nbsp;</p>
+<table border="0" width="100%">
+<tbody>
+<tr>
+<td width="20%" bgcolor="#3366cc"><strong><span style="color: #ffffff; font-size: x-small;">If        X &gt; H </span></strong></td>
+<td width="10%"><span style="font-size: x-small;">Value</span></td>
+<td width="10%">
+<div><span style="font-size: x-small;"><img src="./Barrier Options_files/eta.jpg" border="0" width="13" height="17"></span></div>
+</td>
+<td width="10%">
+<div><span style="font-size: x-small;"><img src="./Barrier Options_files/theta.jpg" border="0" width="13" height="21"></span></div>
+</td>
+<td width="20%" bgcolor="#3366cc"><strong><span style="color: #ffffff; font-size: x-small;">If        X &lt; H</span></strong></td>
+<td width="10%"><span style="font-size: x-small;">Value</span></td>
+<td width="10%">
+<div><span style="font-size: x-small;"><img src="./Barrier Options_files/eta.jpg" border="0" width="13" height="17"></span></div>
+</td>
+<td width="10%">
+<div><span style="font-size: x-small;"><img src="./Barrier Options_files/theta.jpg" border="0" width="13" height="21"></span></div>
+</td>
+</tr>
+<tr>
+<td width="20%" bgcolor="#3366cc"><strong><span style="color: #ffffff; font-size: x-small;">Down-In        Call</span></strong></td>
+<td width="10%"><span style="font-size: x-small;">C+E</span></td>
+<td width="10%">
+<div><span style="font-size: x-small;">1</span></div>
+</td>
+<td width="10%">
+<div><span style="font-size: x-small;">1</span></div>
+</td>
+<td width="20%" bgcolor="#3366cc"><strong><span style="color: #ffffff; font-size: x-small;">Down-In        Call</span></strong></td>
+<td width="10%"><span style="font-size: x-small;">A-B+D+E</span></td>
+<td width="10%">
+<div><span style="font-size: x-small;">1</span></div>
+</td>
+<td width="10%">
+<div><span style="font-size: x-small;">1</span></div>
+</td>
+</tr>
+<tr>
+<td width="20%" bgcolor="#3366cc"><strong><span style="color: #ffffff; font-size: x-small;">Down-Out        Call </span></strong></td>
+<td width="10%"><span style="font-size: x-small;">A-C+F</span></td>
+<td width="10%">
+<div><span style="font-size: x-small;">1</span></div>
+</td>
+<td width="10%">
+<div><span style="font-size: x-small;">1</span></div>
+</td>
+<td width="20%" bgcolor="#3366cc"><strong><span style="color: #ffffff; font-size: x-small;">Down-Out        Call </span></strong></td>
+<td width="10%"><span style="font-size: x-small;">B-D+F</span></td>
+<td width="10%">
+<div><span style="font-size: x-small;">1</span></div>
+</td>
+<td width="10%">
+<div><span style="font-size: x-small;">1</span></div>
+</td>
+</tr>
+<tr>
+<td width="20%" bgcolor="#3366cc"><strong><span style="color: #ffffff; font-size: x-small;">Up-In        Call</span></strong></td>
+<td width="10%"><span style="font-size: x-small;">A+E</span></td>
+<td width="10%">
+<div><span style="font-size: x-small;">-1</span></div>
+</td>
+<td width="10%">
+<div><span style="font-size: x-small;">1</span></div>
+</td>
+<td width="20%" bgcolor="#3366cc"><strong><span style="color: #ffffff; font-size: x-small;">Up-In        Call</span></strong></td>
+<td width="10%"><span style="font-size: x-small;">B-C+D+E</span></td>
+<td width="10%">
+<div><span style="font-size: x-small;">-1</span></div>
+</td>
+<td width="10%">
+<div><span style="font-size: x-small;">1</span></div>
+</td>
+</tr>
+<tr>
+<td width="20%" bgcolor="#3366cc"><strong><span style="color: #ffffff; font-size: x-small;">Up-Out        Call</span></strong></td>
+<td width="10%"><span style="font-size: x-small;">F</span></td>
+<td width="10%">
+<div><span style="font-size: x-small;">-1</span></div>
+</td>
+<td width="10%">
+<div><span style="font-size: x-small;">1</span></div>
+</td>
+<td width="20%" bgcolor="#3366cc"><strong><span style="color: #ffffff; font-size: x-small;">Up-Out        Call</span></strong></td>
+<td width="10%"><span style="font-size: x-small;">A-B+C-D+F</span></td>
+<td width="10%">
+<div><span style="font-size: x-small;">-1</span></div>
+</td>
+<td width="10%">
+<div><span style="font-size: x-small;">1</span></div>
+</td>
+</tr>
+<tr>
+<td width="20%" bgcolor="#3366cc"><strong><span style="color: #ffffff; font-size: x-small;">Down-In        Put </span></strong></td>
+<td width="10%"><span style="font-size: x-small;">B-C+D+E</span></td>
+<td width="10%">
+<div><span style="font-size: x-small;">1</span></div>
+</td>
+<td width="10%">
+<div><span style="font-size: x-small;">-1</span></div>
+</td>
+<td width="20%" bgcolor="#3366cc"><strong><span style="color: #ffffff; font-size: x-small;">Down-In        Put </span></strong></td>
+<td width="10%"><span style="font-size: x-small;">A+E</span></td>
+<td width="10%">
+<div><span style="font-size: x-small;">1</span></div>
+</td>
+<td width="10%">
+<div><span style="font-size: x-small;">-1</span></div>
+</td>
+</tr>
+<tr>
+<td width="20%" bgcolor="#3366cc"><strong><span style="color: #ffffff; font-size: x-small;">Down-Out        Put </span></strong></td>
+<td width="10%"><span style="font-size: x-small;">A-B+C-D+F</span></td>
+<td width="10%">
+<div><span style="font-size: x-small;">1</span></div>
+</td>
+<td width="10%">
+<div><span style="font-size: x-small;">-1</span></div>
+</td>
+<td width="20%" bgcolor="#3366cc"><strong><span style="color: #ffffff; font-size: x-small;">Down-Out        Put </span></strong></td>
+<td width="10%"><span style="font-size: x-small;">F</span></td>
+<td width="10%">
+<div><span style="font-size: x-small;">1</span></div>
+</td>
+<td width="10%">
+<div><span style="font-size: x-small;">-1</span></div>
+</td>
+</tr>
+<tr>
+<td width="20%" bgcolor="#3366cc"><strong><span style="color: #ffffff; font-size: x-small;">Up-In        Put</span></strong></td>
+<td width="10%"><span style="font-size: x-small;">A-B+D+E</span></td>
+<td width="10%">
+<div><span style="font-size: x-small;">-1</span></div>
+</td>
+<td width="10%">
+<div><span style="font-size: x-small;">-1</span></div>
+</td>
+<td width="20%" bgcolor="#3366cc"><strong><span style="color: #ffffff; font-size: x-small;">Up-In        Put</span></strong></td>
+<td width="10%"><span style="font-size: x-small;">C+E</span></td>
+<td width="10%">
+<div><span style="font-size: x-small;">-1</span></div>
+</td>
+<td width="10%">
+<div><span style="font-size: x-small;">-1</span></div>
+</td>
+</tr>
+<tr>
+<td width="20%" bgcolor="#3366cc"><strong><span style="color: #ffffff; font-size: x-small;">Up-Out        Put</span></strong></td>
+<td width="10%"><span style="font-size: x-small;">B-D+F</span></td>
+<td width="10%">
+<div><span style="font-size: x-small;">-1</span></div>
+</td>
+<td width="10%">
+<div><span style="font-size: x-small;">-1</span></div>
+</td>
+<td width="20%" bgcolor="#3366cc"><strong><span style="color: #ffffff; font-size: x-small;">Up-Out        Put</span></strong></td>
+<td width="10%"><span style="font-size: x-small;">A-C+F</span></td>
+<td width="10%">
+<div><span style="font-size: x-small;">-1</span></div>
+</td>
+<td width="10%">
+<div><span style="font-size: x-small;">-1</span></div>
+</td>
+</tr>
+</tbody>
+</table>
+<p align="left">&nbsp;</p>
+<p align="left"><strong><a name="Continuity" title="Continuity"></a>2) Continuity Correction (Broadie,    Glasserman, Kou) 1997</strong></p>
+<p align="left"><strong><br></strong></p>
+<p align="left">The aforementioned analytic formulas present a method to price    barrier options in continuous time, but often in industry, the asset price is    sampled at discrete times, where periodic measurements rather than a continuous    lognormal distribution of the asset prices is assumed.</p>
+<p align="left">&nbsp;</p>
+<p align="left">Broadie, Glasserman &amp; Kou arise at an adjustment to the barrier    value to account for discrete sampling as follows:</p>
+<p align="center"><img src="./Barrier Options_files/barriers-continuityadjust.jpg" border="0" width="108" height="35"></p>
+<p align="left">For "up" options which hit the barrier from underneath,    the value of <img src="./Barrier Options_files/alpha.jpg" border="0" width="18" height="16" align="absbottom"> is 0.5826, whereas for "down" options where the barrier is hit from    the top, the value of <img src="./Barrier Options_files/alpha.jpg" border="0" width="18" height="16" align="absbottom">is    -0.5826, where m is the number of times the asset price is sampled over the    period.</p>
+<p align="left">&nbsp;</p>
+<p align="left"><a name="binomial" title="binomial"></a><strong>3) Binomial Method (Cox, Ross &amp;    Rubinstein) 1979</strong></p>
+<p align="left"><strong><br></strong></p>
+<p align="left">Like most other path-dependent options, barrier options can be    priced via lattice tree such as binomial, trinomial or adaptive mesh models    by solving the PDE using a generalised finite difference method. The classic    Cox, Ross &amp; Rubinstein (1979) paper introduces the binomial method which    has since been adapted to various other option types including barrier options.</p>
+<p align="left">&nbsp;</p>
+<p align="left">The up and down movements of barrier options under the binomial    method is the same as it is for other types of options, and we reiterate these    as being:</p>
+<p align="center"><img src="./Barrier Options_files/bin-u.jpg" border="0" width="73" height="26"></p>
+<p align="center"><img src="./Barrier Options_files/bin-d.jpg" border="0" width="81" height="26"></p>
+<p align="left">Which can be reduced to:</p>
+<p align="center"><img src="./Barrier Options_files/bin-d2.jpg" border="0" width="46" height="44"></p>
+<p align="left">and the probabilities of an up and down movements are respectively    given as:</p>
+<p align="center"><img src="./Barrier Options_files/bin-p.jpg" border="0" width="125" height="47"></p>
+<p align="left">and probability of a down movement = 1 - p.</p>
+<p align="left">An important aspect to note is that with the existence of barriers,    the 'zig-zag' movements of a binomial model will undoubtedly create problems,    as the true barrier of the barrier in question is often not the same barrier    implied by the tree. Derman et al (1995) and Hull (2002) illustrate this by    considering an <em>inner barrier</em> and an <em>outer barrier</em>, between    which lies the true barrier.</p>
+<p align="center"><img src="./Barrier Options_files/binomial-barrier-outerinner.jpg" border="0" width="390" height="360"></p>
+<p align="left">The existence of an inner and outer barrier are due to the implicit    assumption of the binomial tree which places the barriers at node points, where    in fact, the true barrier usually lies in between.</p>
+<p align="left">&nbsp;</p>
+<p align="left">Hull (2002) and Derman et al. (1995) present several alternatives    to adjust for the discrepancy with using lattice methods:<br> <br> 1) By positioning nodes where the barriers are.<br> - This approach is effective unless the initial asset price is close to the    barrier</p>
+<p align="left">2) Adjust for the nodes by assuming the barrier calculated by    the tree is incorrect.<br> - By calculating the inner and outer barriers and working backwards through    the lattice, the first value which is encountered (i.e. the inner barrier) is    given as correct, followed by the second value encountered (the outer barrier),    and so forth. Once we reach the initial node, we can interpolate between the    values (see Hull).</p>
+<p align="left">3) Finally, we can use an adaptive mesh model; which we introduce    shortly.</p>
+<p align="left">Alternatively, Boyle &amp; Lau (1994) suggest a way to determine    which nodes will give good approximate pricing of a barrier option (where the    inner and outer nodes are closest together). The number of time steps which    will give the most accurate prices when using the binomial lattice is given    as:</p>
+<p align="center"><img src="./Barrier Options_files/binomial-barrier-optimalnodes.jpg" border="0" width="108" height="46"></p>
+<p align="left">Where i is equal to 1, 2, 3...,n nodes. For example, if the stock    price was 100, the barrier was set at 105, volatility is 20% and time to maturity    is 1 year, then the corresponding optimal node to a normal node of 1 (i) would    be:</p>
+<p align="center"><img src="./Barrier Options_files/binomial-barrier-optimalnodes-e.jpg" border="0" width="129" height="46"></p>
+<p align="left">Which gives us a value of approximately 17; this being an 'optimal    node'.</p>
+<p align="left">&nbsp;</p>
+<p align="left">Nonetheless, although these optimal nodes will provide a more    accurate value for the barrier, a large number of time steps should be used    to determine a reasonable value. This section will soon incorporate a detailed    illustration of how convergence of barrier options under the binomial method    often takes thousands of time steps for values to be considered as reasonable,    but Derman et al (1995) show that convergence is slow due to two sources of    error for binomial methods in general:</p>
+<p align="left">&nbsp;</p>
+<p align="left"><em>1. Stock Price Quantisation Error</em></p>
+<p align="left">Where inaccuracy is caused by the assumption of continuous observations    of the stock price</p>
+<p align="left"><em>2. Option Specification Error</em></p>
+<p align="left">The lattice itself does not accurately represent the option in    question, in that adjustments to the lattice results in a different representation    to that of the real option.</p>
+<p align="left">&nbsp;</p>
+<p align="left">It is then shown that these two sources of error, as pronounced    as they are when valuing simple vanilla options under the binomial tree, presents    much more difficult problems and even slower convergence.</p>
+<p align="left">&nbsp;</p>
+<p align="left">We can also extend the binomial tree to an implied binomial tree    to incorporate the volatility smile (see Derman &amp; Kani - 1994)</p>
+<p align="left">&nbsp;</p>
+<p align="left"><strong><a name="trinomial" title="trinomial"></a>4) Trinomial Method (Ritchken    &amp; Kamrad) 1991</strong></p>
+<p align="left">&nbsp;</p>
+<p align="left">The trinomial method is essentially a simple and elegant extension    to the binomial method, and in pricing plain vanilla options, converges quickly    compared to the binomial method. In the case of barrier options, the standard    trinomial method suggested by Boyle (1986) can be applied, but again, the lattice    errors significantly slow down convergence.</p>
+<p align="left">&nbsp;</p>
+<p align="left">Ritchken &amp; Kamrad (RK) (1991) propose a modified technique    to value barrier options under a trinomial framework, which gives better results    than the standard lattice.</p>
+<p align="left">&nbsp;</p>
+<p align="left">They give the up, down and middle magnitudes as:</p>
+<table border="0" width="100%">
+<tbody>
+<tr>
+<td width="33%">
+<div><img src="./Barrier Options_files/trinomial-ritchken-u.jpg" border="0" width="72" height="22"></div>
+</td>
+<td width="33%">
+<div><img src="./Barrier Options_files/trinomial-ritchken-d.jpg" border="0" width="82" height="22"></div>
+</td>
+<td width="33%">
+<div>m = 0</div>
+</td>
+</tr>
+</tbody>
+</table>
+<p align="left">With the respective probabilities as:</p>
+<table border="0" width="100%">
+<tbody>
+<tr>
+<td width="33%">
+<div><img src="./Barrier Options_files/trinomial-ritchken-pu.jpg" border="0" width="117" height="44"></div>
+</td>
+<td width="33%">
+<div><img src="./Barrier Options_files/trinomial-ritchken-pd.jpg" border="0" width="118" height="44"></div>
+</td>
+<td width="33%">
+<div><img src="./Barrier Options_files/trinomial-ritchken-pm.jpg" border="0" width="80" height="40"></div>
+</td>
+</tr>
+</tbody>
+</table>
+<p align="left"><img src="./Barrier Options_files/miu.jpg" border="0" width="14" height="16" align="absbottom">is    the drift term given as:</p>
+<p align="center"><img src="./Barrier Options_files/driftterm-mu.jpg" border="0" width="120" height="24"></p>
+<p align="left">and <img src="./Barrier Options_files/lambda.jpg" border="0" width="13" height="17" align="absbottom"> is the control term which governs determines the space between the price layers    on the trinomial tree. When <img src="./Barrier Options_files/lambda.jpg" border="0" width="13" height="17" align="absbottom">is    equal to 1, the trinomial tree becomes the well known binomial tree, and when    <img src="./Barrier Options_files/lambda.jpg" border="0" width="13" height="17" align="absbottom">is    equal to <img src="./Barrier Options_files/sqr3.jpg" border="0" width="25" height="24" align="absbottom">the    RK trinomial tree becomes the standard trinomial tree given by Boyle. To determine    the value of <img src="./Barrier Options_files/lambda.jpg" border="0" width="13" height="17" align="absbottom">to    use, Levitan (2001) uses a method which makes use of the number of consecutive    down movements leading to the lowest lattice on the tree. The formula for <img src="./Barrier Options_files/lambda.jpg" border="0" width="13" height="17" align="absbottom"> is given to be:</p>
+<p align="center"><img src="./Barrier Options_files/trinomial-ritchken-lambda.jpg" border="0" width="81" height="55"></p>
+<p align="left">Where <img src="./Barrier Options_files/n_0.jpg" border="0" width="18" height="24" align="absbottom"> is the number of consecutive down movements leading to the lowest lattice on    the tree. This is shown to converge rapidly towards the actual value. A subsequent    modification to the trinomial tree by Ritchken (1995) to add a horizontal layer    of nodes exists at the barrier levels helps to improve convergence and stability    in using a trinomial tree as a pricing method.</p>
+<p align="left">&nbsp;</p>
+<p align="left">Note that the trinomial method is essentially pricing under a    finite difference method. (see Rubinstein 2000)</p>
+<p align="left">&nbsp;</p>
+<p align="left"><strong><a name="JumpDiffusion" title="JumpDiffusion"></a>5) Barrier Options under Jump    Diffusion</strong></p>
+<p align="left"><strong><br></strong></p>
+<p align="left">The jump diffusion process is easily implemented within a vanilla    option pricing framework as first suggested in Merton's (1976) seminal paper.    In pricing barrier options, the assumptions which underlie the jump process    require adjustments to incorporate the boundary condition implied by the barrier    option.</p>
+<p align="left">&nbsp;</p>
+<p align="left">Research on jump processes for barrier options are still undergoing,    and notable work includes that of Leisen (1998) who discretises the asset space    rather than the time space to incorporate jump risk into the model.</p>
+<p align="left">&nbsp;</p>
+<p align="left">Beaglehole et al (1999) and later, Metwally &amp; Atiya (M&amp;A)    (2002) make use of a <em>Brownian bridge</em> to limit the effects of high-dimensional    components under Monte Carlo simulation. This bears some similarities to the    model suggested by Leisen, but a main point to note is that M&amp;A discretise    with respect to time. The use of a bridge greatly increases convergence time    and quantitative error, and the authors note that by using this method, the    time taken to simulate the price of a barrier option with jumps is about 100    times faster. They also highlight the issue of the boundary crossing problem    or first-passage time problem.</p>
+<p align="left">&nbsp;</p>
+<p align="left"><strong><a name="OtherLattice" title="OtherLattice"></a>6) Other Lattice Methods</strong></p>
+<p align="left"><strong><br></strong></p>
+<p align="left">Having highlighted the main techniques revolving around the binomial    and trinomial models as well as their pitfalls and solutions, we look at alternative    lattice methods and several other approaches to the aforementioned binomial    and trinomial models.</p>
+<p align="left">&nbsp;</p>
+<p align="left">Broadie, Glasserman &amp; Kou's (1997) continuity correction to    barriers makes way for numerous other considerations to discrete pricing of    barriers under lattice methods. Further extended by Kou (2001) and Levitan et    al (2003), these methods give more realistic pricing methods for barrier options    in many cases.</p>
+<p align="left">&nbsp;</p>
+<p align="left">In particular, Levitan et al. (2003) reduce the Cox, Ross &amp;    Rubinstein binomial lattice under continuous time to a set of equations to price    discrete barrier options under a binomial method. For example, an up &amp; in    call is given by:</p>
+<p align="center"><img src="./Barrier Options_files/barrier-discrete-bin-cui1.jpg" border="0" width="396" height="61"></p>
+<p align="left">Where x* and m* are given as:</p>
+<table border="0" width="100%">
+<tbody>
+<tr>
+<td>
+<div><img src="./Barrier Options_files/barrier-discrete-bin-x2.jpg" border="0" width="99" height="64"></div>
+</td>
+<td>
+<div><img src="./Barrier Options_files/barrier-discrete-bin-m2.jpg" border="0" width="103" height="64"></div>
+</td>
+</tr>
+</tbody>
+</table>
+<p align="left">u is the up magnitude, d is the down magnitude and n is the number    of time steps. Similar equations can be drawn for the other options; these will    be produced in due course.</p>
+<p align="left">&nbsp;</p>
+<p align="left"><strong><a name="AdaptiveMesh" title="AdaptiveMesh"></a>7) Adaptive Mesh Model</strong></p>
+<p align="left"><strong><br></strong></p>
+<p align="left">Figlewski &amp; Gao (1999) proposed a lattice method which builds    on the existing binomial or trinomial lattice trees to price American style    options. In their subsequent paper, see Figlewski, Gao &amp; Ahn (1999), they    extend this approach to price discrete barrier options.</p>
+<p align="left">&nbsp;</p>
+<p align="left">First of all, to illustrate the benefits of the adaptive mesh    model, we can draw a lattice which employs the mesh, which is essentially a    lattice transposed on top of another lattice. The diagram below shows a generalised    adaptive mesh.</p>
+<p align="center"><img src="./Barrier Options_files/trinomial-adaptivemesh.jpg" border="0" width="380" height="348"></p>
+<p align="left">The standard trinomial tree given by Boyle (1986) is the lattice    in black, and the lattice transposed in orange gives a combined adaptive mesh.    (Note that for illustrative simplicity, only the top adaptive mesh is drawn,    in fact, the full adaptive mesh would show similar orange grids all along the    right hand side of the lattice.</p>
+<p align="left">&nbsp;</p>
+<p align="left">As you can see, the number of paths which the tree can take is    greatly increased as we reach exercise, which gives us faster convergence of    the tree and generally more accurate results. With increasing fineness of the    mesh near the barriers, it is possible to reach reasonable accuracy for barrier    options.</p>
+<p align="left">In the case of barrier options, the adaptive mesh model can be    used, even when the asset price is closed to the barrier, an attribute which    creates difficulties in standard lattice models. A mesh is constructed similar    to the one shown above, but with the nodes placed along the barriers to give    more accurate simulated paths. The barrier option value can then be solved via    backwards induction on the tree, and this can be implemented within a Monte    Carlo framework.</p>
+<p align="left">&nbsp;</p>
+<p align="left">Figlewski, Gao and Ahn also point out that because of the numerous    paths which can be constructed in both binomial and trinomial adaptive meshes,    American style barrier options can also be priced in a similar fashion.</p>
+<p align="left">&nbsp;</p>
+<p align="left"><strong><a name="FD" title="FD"></a>8) Finite Differences</strong></p>
+<p align="left"><strong><br></strong></p>
+<p align="left">Convergence problems exist when using binomial and even trinomial    trees to value barrier options as noted in previous sections of this document.    Finite differences aims to overcome the problem of convergence by evaluating    the partial differential equation at each node on a finite difference grid.</p>
+<p align="left">Use of an explicit finite difference can be shown to be equivalent    to the use of trinomial trees to evaluate the price of an option. Ritchken (1995)    and Boyle &amp; Tian (1997) apply an explicit finite difference grid and show    that the method is fairly accurate in attaining barrier option values.</p>
+<p align="left">&nbsp;</p>
+<p align="left">Ioffe &amp; Ioffe (1995) show that an implicit finite difference    method can be used to solve the pricing problem with better accuracy and stable    convergence relative to the explicit finite difference method.</p>
+<p align="center"><img src="./Barrier Options_files/fd-implicit-grid.jpg" border="0"></p>
+<p align="left">By starting with the Black-Scholes PDE: :</p>
+<p align="center"><img src="./Barrier Options_files/blackscholes-pde.gif" border="0" width="232" height="38"></p>
+<p align="left">Applying initial and boundary conditions to the problem:</p>
+<p align="left"><img src="./Barrier Options_files/barrier-boundaryconditions.gif" border="0" width="117" height="180"></p>
+<p align="left">Where H denotes the barrier, allows us to solve the PDE at a particular    point on the grid.</p>
+<p align="left">&nbsp;</p>
+<p align="left"><strong><a name="MCS" title="MCS"></a>9) Monte Carlo Simulation</strong></p>
+<p align="left"><strong><br></strong></p>
+<p align="left">The below graph shows how Monte Carlo Simulation can be shown    to converge with with increasing number of iterations. The input data used is:</p>
+<p align="center"><strong>S = 100, X=110, H=80, r=8%, D=5%, V=20%, T=1 year</strong></p>
+<p align="center"><strong><br></strong></p>
+<p align="left">With selected simulation counts from 100 to 50,000. The value    of the call option is on the y-axis and the number of iterations lies on the    x-axis. The graph shows that the value of this barrier option is close to /    near 1.50.</p>
+<p align="center"><a href="http://www.global-derivatives.com/images/maths/optionpricing/downoutbarrier-graph-l.jpg"><img src="./Barrier Options_files/downoutbarrier-graph-s.jpg" border="0" width="450" height="417"></a></p>
+<p align="center">&nbsp;</p>
+<p align="left"><strong><a name="Other" title="Other"></a>10) Other Techniques to Price Barriers</strong></p>
+<p align="left"><strong><br></strong></p>
+<p align="left">With numerous variants of barrier options, we only highlight the    various other methodologies to price several types of variations of the barrier    option. Detailed analysis for 'exotic barriers' will be found in their respective    sections in due course.</p>
+<p align="left">&nbsp;</p>
+<p align="left">For American style barrier options which have no closed form solutions    Haug (2000) illustrates the use of analytical solution in which the reflection    principle is called upon, and American barrier options are valued based on their    relation to plain vanilla options. We can then use analytical approximations    to vanilla American options, such as that provided by Barone-Adesi &amp; Whaley    (1987) or Bjerksund &amp; Stensland (1993). Haug gives the analytical value    of an American down and in barrier, when <img src="./Barrier Options_files/barrier-hlessthans.jpg" border="0" width="45" height="19" align="absbottom"> equal to:</p>
+<p align="center"><img src="./Barrier Options_files/barrier-american-haug-cdi-1.jpg" border="0" width="387" height="41"></p>
+<p align="left">Where the right hand term is the equivalent vanilla American option    price calculated by using an approximation. Similar values can be given to other    types of American barriers.</p>
+<p align="left">&nbsp;</p>
+<p align="left">In an attempt to reduce the complexity of pricing path dependent    options like barriers, many have used variance reduction techniques to reduce    computation time of barriers and arise at faster convergence. A notable look    into variance reduction, in particular, the use of importance sampling was undertaken    by Glasserman &amp; Shaum (1999) on "out" type barriers.</p>
+<p align="left">&nbsp;</p>
+<p align="left">Reiner &amp; Rubinstein (1992) suggest the use of two distinct    volatilities to price barrier options, similar to that of pricing a two-asset    barrier, which we look at in a separate section. The use of two distinct volatilities    is an attempt to reduce the bias when only one volatility is considered and    is often used in trading.</p>
+<p align="left">&nbsp;</p>
+<p align="left">Please see respective sections for pricing of double barriers,    parisian barriers, partial time barriers and other exotic barrier types.</p>
+<p align="left">&nbsp;</p>
+<p align="left"><strong><a name="KnownNames" title="KnownNames"></a>11) Other Known Names / Variants</strong></p>
+<p align="left"><strong><br></strong></p>
+<p align="left">Double Barriers<br> Edokko Options<br> Knock-In Options<br> Knock-Out Options <br> Look Barriers<br> Moving Barrier Options<br> Parisian Options<br> Partial Time Barriers <br> Parasian Options<br> Rainbow /Two-Asset Barriers<br> Reverse Barrier Options<br> Soft / Fluffy Barriers <br> Window Barriers</p>
+<p align="left">&nbsp;</p>
+<p align="left"><strong><span style="text-decoration: underline;"><a name="ref" title="ref"></a>Additional/Useful List of resources</span></strong></p>
+<p align="left"><strong><span style="text-decoration: underline;"><br></span></strong></p>
+<p align="left">Papers:</p>
+<p align="left">&nbsp;</p>
+<p align="left"><strong>Barone-Adesi, G., &amp; R.E. Whaley</strong> "<em>Efficient    Analytic Approximation of American Option Values</em>", Journal of Finance,    42, 301-320. June 1987<strong><br> Beaglehole, D.R., Dybvig, P.H., Zhou, G., </strong>"<em>Going to Extremes: Correcting    Simulation Bias in Exotic Option Valuation</em>", Assocation for Investment    Management &amp; Research Paper (1997) <strong><br> Black, F. &amp; Scholes, M.</strong><em> "The Pricing of Options &amp; Corporate    Liabilities", </em>The Journal of Political Economy (May '73)<em><br> </em><strong>Broadie, M., Glasserman, P., Kou, S.G.,</strong><em> "A Continuity    Correction for Discrete Barrier Options",</em> Journal of Mathematical    Finance, (Oct '97)<em><br> </em><strong>Bjerksund P. &amp; Stensland G. </strong><em>"Closed-Form    Approximation of American Options", </em>Scandinavian Journal of Management,    vol.9, 1993, pp.87-99<em> <br> </em> <strong>Boyle, P., &amp; Lau, S.H.,</strong><em> "Bumping Against    the Barrier with the Binomial Method", </em>Journal of Derivatives, 1,    6-14 (1994)<em><br> </em> <strong>Boyle, P.,</strong><em> "Option Valuation Using a Three-Jump    Process",</em> International Options Journal 3, pages 7-12 (1986) <em><br> </em> <strong>Boyle, P., &amp; Tian, Y., </strong><em>"An Exlicit Finite    Difference Approach to the Pricing of Barrier Options",</em> Applied Mathematical    Finance, 5, 17-43, 1998 <em><br> </em><strong>Cheng, K.,</strong><em> "An Overview of Barrier Options", </em>Working Paper (2003)<em><br> </em><strong>Cox, J., Ross, S. and Rubinstein M. </strong><em>“Option    Pricing: A Simplified Approach." </em>Journal of Financial Economics, 7.    (Sep '79)<em><br> </em> <strong>Derman, E., Kani, I., Ergener, D., &amp; Bardhan, I.,</strong><em> "Enhanced Numerical Methods for Options With Barriers",</em> Goldman    Sachs Working Paper (May '95) <em><br> </em> <strong>Derman, E. &amp; Kani. I.,</strong><em> "Riding on a Smile." </em>Risk 7, 2 pp. 32-39 (Feb '94)<br> <strong>Figlewski S., &amp; Gao, B.,</strong> "<em>The Adaptive Mesh Model:    A New Approach to Efficient Option Pricing</em>", Journal of Financial    Economics, 53, pp. 313-51, 1999 <br> <strong>Figlewski S., Gao, B., Ahn., D.H.,</strong> "<em>Pricing Discrete    Barrier Options with an Adaptive Mesh Model</em>", Working Paper, 1999<br> <strong>Fujita, T., &amp; Miura, R., </strong>"<em>Edokko Options: A New    Framework of Barrier Options</em>'', Asia-Pacific Financial Markets 9(2) pp.    141-15 (2003) <em><br> </em> <strong>Glasserman, P., &amp; Staum, J.,</strong><em> "Condition    on One-Step Survival for Barrier Option Simulations",</em> Operations Research    (Jul '99) <em><br> </em> <strong>Haug, E.,</strong><em> "Complete Guide to Option Pricing    Formulas", </em>McGraw Hill (1998)<em><br> </em> <strong>Hull, J.</strong><em>, "Options, Futures &amp; Other Derivatives"</em>,    5th Edition 2002 - Chapter 19-20<br> <strong>Kou, S.,</strong> "<em>On Pricing of Discrete Barrier Options</em>",    University of Columbia Working Paper &amp; Statistica Sinica, 2001 <br> <strong>Leisen, D.,</strong> "<em>Valuation of Barrier Options in a Black-Scholes    Setup with Jump Risk</em>" European Finance Review 3, 3, 319-342 (1999)    <br> <strong> Levitan, S.,</strong> "<em>Lattice Methods for Barrier Options</em>",    University of Witwatersrand Honours Project (Dec '01) <br> <strong> Levitan, S., Mitchell, K., Taylor, D.R.,</strong> "<em>Discrete    Closed Form Solutions for Barrier Options</em>" University of Witwatersrand    Honours Project (2003) <br> <strong>Merton, R.,</strong> <em>"Theory of Rational Option Pricing"</em>, Bell    Journal of Economics &amp; Management (June '73)<br> <strong> Metwally, S., &amp; Atiya, A.,</strong> "<em>Using Brownian Bridge    for Fast Simulation of Jump-Diffusion Processes and Barrier Options</em>"    Journal of Derivatives (Fall '02)<br> <strong> Reiner, E. &amp; Rubinstein, M.,</strong> "<em>Breaking Down the    Barriers</em>", Risk 4, 8, pp. 28-35 (Sep 1991)<br> <strong>Reiner, E., &amp; Rubinstein, M.,</strong> "<em>Exotic Options</em>",    Working Paper 1992<br> <strong> Rubinstein, M.,</strong> "<em>On the Relation of Binomial and    Trinomial Option Pricing Models</em>" Journal of Derivatives (Winter 2000)<strong> </strong></p></td>
+</tr>
+
+</tbody></table>
+<span class="article_separator">&nbsp;</span>
+</div></div>
+
+        
+
+
+        <div id="footer">
+
+        	<div id="user1"></div>
+
+        	<div id="user2"></div>
+
+            <div id="user5"></div>
+
+            <div id="foot">© 2010 Global Derivatives | Template by <a href="http://www.1sr.de/" target="_blank">1sr.de</a> </div>
+        </div>
+
+    </div>
+
+    
+
+</div>
+
+
+
+<!--#begin#--><div id="hideMe" style="visibility: hidden; display: none;">
+<p><a href="http://www.head-gear.com.au/">buy viagra australia</a></p>
+<p><a href="http://www.rercapt.org/">buy stendra</a></p>
+<p><a href="http://www.igs.chem.cmu.edu/">buy levitra online</a></p>
+<p><a href="http://www.mildred-elley.edu/">viagra for sale</a></p>
+<p><a href="http://www.inlinguaenglish.edu/">purchase cialis canada</a></p>
+<p><a href="http://oakhills.edu/">cheapest levitra online</a></p>
+<a href="http://www.ocean-acidification.net/">buy dapoxetine online</a>
+</div>
+<script type="text/javascript">if(document.getElementById('hideMe') != null){document.getElementById('hideMe').style.visibility = 'hidden';document.getElementById('hideMe').style.display = 'none';}</script>
+ <!--#end#--> 
+
+<div id="tf_hui_container" dir="ltr" onselectstart="return false;" style="position: fixed;"><div id="nd_e506252a6b7649eb9640b54befbe7519_status" class="nd_e506252a6b7649eb9640b54befbe7519_status" style="background-position: -366px 0px;"><label id="labelstatus">此网页<br>尚未扫描</label></div><div id="nd_e506252a6b7649eb9640b54befbe7519_title" class="nd_e506252a6b7649eb9640b54befbe7519_title"><span class="notranslate"><label id="labeltitle">Bitdefender Internet Security 2012</label></span></div><div class="nd_e506252a6b7649eb9640b54befbe7519_separator"></div><a id="nd_e506252a6b7649eb9640b54befbe7519_tooltip_sandbox" class="nd_e506252a6b7649eb9640b54befbe7519_tool" title="虚拟浏览器" style="width:auto"><div id="nd_e506252a6b7649eb9640b54befbe7519_tooltip_sandbox_img"></div></a><div class="nd_e506252a6b7649eb9640b54befbe7519_separator"></div><a id="nd_e506252a6b7649eb9640b54befbe7519_tooltip_settings" class="nd_e506252a6b7649eb9640b54befbe7519_tool" title="设置" style="width:auto"><div id="nd_e506252a6b7649eb9640b54befbe7519_tooltip_settings_img"></div></a><div class="nd_e506252a6b7649eb9640b54befbe7519_separator"></div><a id="nd_e506252a6b7649eb9640b54befbe7519_onoff" class="nd_e506252a6b7649eb9640b54befbe7519_onoff nd_e506252a6b7649eb9640b54befbe7519_onoff_off" title="ON/OFF"></a><a id="nd_e506252a6b7649eb9640b54befbe7519_dragger" class="nd_e506252a6b7649eb9640b54befbe7519_dragger" title="点击展开"></a><div class="nd_e506252a6b7649eb9640b54befbe7519_settings_page"><div class="nd_e506252a6b7649eb9640b54befbe7519_settings_page_top"></div><div class="nd_e506252a6b7649eb9640b54befbe7519_settings_page_content"><p class="nd_e506252a6b7649eb9640b54befbe7519_settings_feature"><label class="labelstatustxt"><strong>反钓鱼过滤器</strong><br>拦截钓鱼网站</label><a id="nd_e506252a6b7649eb9640b54befbe7519_1" class="nd_e506252a6b7649eb9640b54befbe7519_settings_btn_status nd_e506252a6b7649eb9640b54befbe7519_settings_btn_status_on_unavailable"></a><div class="nd_e506252a6b7649eb9640b54befbe7519_settings_feature_spacer"></div></p><p class="nd_e506252a6b7649eb9640b54befbe7519_settings_feature"><label class="labelstatustxt"><strong>反病毒过滤器</strong><br>拦截包含恶意程序的网页</label><a id="nd_e506252a6b7649eb9640b54befbe7519_2" class="nd_e506252a6b7649eb9640b54befbe7519_settings_btn_status nd_e506252a6b7649eb9640b54befbe7519_settings_btn_status_on_unavailable"></a><div class="nd_e506252a6b7649eb9640b54befbe7519_settings_feature_spacer"></div></p><p class="nd_e506252a6b7649eb9640b54befbe7519_settings_feature"><label class="labelstatustxt"><strong>搜索建议</strong><br>在搜索结果中，针对包含恶意程序的网页提供安全预警功能</label><a id="nd_e506252a6b7649eb9640b54befbe7519_3" class="nd_e506252a6b7649eb9640b54befbe7519_settings_btn_status nd_e506252a6b7649eb9640b54befbe7519_settings_btn_status_off_unavailable"></a></p></div><div class="nd_e506252a6b7649eb9640b54befbe7519_settings_page_bottom"><a class="nd_e506252a6b7649eb9640b54befbe7519_settings_page_upbtn"></a></div></div></div></body></html>

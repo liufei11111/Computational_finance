@@ -1,0 +1,808 @@
+@charset "utf-8";
+/* CSS Document */
+
+html, body
+{
+	margin: 0;
+	padding: 0;
+	height: 100%;
+}
+
+body 
+{
+	line-height: 1.4em;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 0.75em;
+	font-style: normal;
+	font-weight: normal;
+	letter-spacing: normal;
+	color: #000000;
+	margin: 0;
+	padding: 0;
+	background: url(../images/body_bg.png) repeat-y #cccccc center top;
+}
+
+h3
+{
+	margin: 0;
+	padding: 0;
+}
+
+p
+{
+	padding: 0;
+	margin: 0;
+}
+
+a
+{
+	color: #3C6FAD;
+	font-weight: bold;
+	text-decoration: underline;
+}
+
+a:hover
+{
+	color: #3C6FAD;
+	text-decoration: none;
+}
+
+#left .moduletable ul li, #content ul li, #right .moduletable ul li, 
+{
+	list-style-image: none;
+	list-style:none;
+	background: url(../images/point_blue.gif) no-repeat left center;
+	padding-left: 12px;
+	text-align: left;
+}
+
+#content ul li:hover, #right .moduletable ul li:hover
+{
+	list-style-image: none;
+	background: url(../images/point_blueh.gif) no-repeat left center; 
+}
+
+#content ul li a, #right ul li a
+{
+	color: #3C6FAD;
+	text-decoration: none;
+	font-size: 90%;
+}
+
+#content ul li a:hover, #right ul li a:hover
+{
+	color: #3C6FAD;
+	text-decoration: none;
+}
+
+.inside
+{
+	padding: 0 6px;
+}
+
+#content .ininside
+{
+	padding: 0 6px;
+}
+
+#content_big .ininside
+{
+	padding-left: 6px;
+}
+
+img
+{
+	border: none;
+}
+
+#wrap
+{
+	margin-left: auto;
+	margin-right: auto;
+	width: 1000px;
+	height: 100%;
+	min-height: 100%;
+	height:auto !important;
+	text-align: left;
+	overflow: hidden;
+}
+
+#toolbar
+{
+	background: url(../images/toolbar.png) repeat-x;
+	height: 30px;
+	width: 988px;
+	overflow: hidden;
+	border-bottom: 3px solid #ffffff;
+	float: left;
+}
+
+#toolbar_inside
+{
+	padding: 5px;
+}
+	
+#header
+{
+	height: 83px;
+	width: 988px; /*982px;*/
+	overflow: hidden;
+	float: left;
+	/*border: 3px solid #000000;*/
+	background: url(../images/header_bg.png) repeat-x;
+}
+
+#topmenu
+{
+	background: url(../images/topmenu_bg.png) repeat-x;
+	float: left;
+	width: 988px;
+	height: 30px;
+}
+/* --- Linker teil ---*/
+#left
+{
+	width: 244px;/*250px;*/
+	float: left;
+	border-top: #ffffff 1px solid;
+	/*background: url(../images/borderleft.gif) repeat-y right;*/
+}
+
+#left h3
+{
+	color:#ffffff;
+	height: 30px;
+	line-height: 26px;
+	overflow: hidden;
+	font-size: 100%;
+	padding-left: 30px;
+	width: 210px;
+	background: url(../images/h3_left.png) no-repeat;
+}
+
+#left .moduletable_menu ul, #left .moduletable ul
+{
+	padding: 0;
+	margin: 0;
+	width: 240px;
+}
+
+#left .moduletable_menu ul li, #left .moduletable ul li
+{
+    list-style: none;
+    margin: 0; 
+	padding: 0;
+}
+
+#left .moduletable_menu ul li ul, #left .moduletable ul li ul
+{
+    margin: 0; 
+	padding: 0;
+}
+
+#left .moduletable_menu ul li ul li, #left .moduletable ul li ul li
+{
+    margin: 0;
+	padding-left: 1em;
+	background: #ffffff;
+
+}
+  
+* html #left .moduletable_menu ul li ul li 
+{  /* Korrektur fuer IE 5.x */
+    margin-left: 0;
+    ma\rgin-left: 0;
+}
+
+#left .moduletable_menu ul a, #left .moduletable ul a
+{
+    display:block;
+    padding: 0.5em 0.5em 0.5em 2em;
+    text-decoration: none; 
+	font-weight: bold;
+	color: #000000;
+	border-bottom: #000000 dashed 1px;
+	background: url(../images/menu_left.gif) no-repeat left center;
+}
+
+* html #left .moduletable_menu ul a 
+{
+    width: 100%;    /* Breitenangabe fuer IE 5.x */
+    w\idth: 8.8em;  /* Breitenangabe fuer IE 6 */
+}
+  
+* html #left .moduletable_menu ul li ul li a 
+{
+    width: 100%;    /* Breitenangabe fuer IE 5.x */
+    w\idth: 7.8em;  /* Breitenangabe fuer IE 6 */
+}
+  
+#left .moduletable_menu ul a:hover, #left .moduletable ul a:hover 
+{
+	/*color: #000000;*/
+	background: #cccccc url(../images/menu_left_hover.gif) no-repeat left center;
+}
+
+/*--- LOGIN ---*/
+#form-login /* Allgemein */
+{
+	padding: 0;
+	margin: 0;
+}
+
+#left .input
+{	
+	border: none;
+	font-weight: bold
+}
+
+#modlgn_username
+{
+	/*background: url(../images/user.png) no-repeat left #ffffff;*/
+	height: 17px;
+	padding-left: 0px;
+	width: 95%;
+	border: solid 1px #3C6FAD;
+}
+
+#modlgn_passwd
+{
+	/*background: url(../images/lock.png) no-repeat left #ffffff;*/
+	height: 17px;
+	padding-left: 0px;
+	width: 95%;
+	border: solid 1px #3C6FAD;
+}
+	
+
+#form-login-username, #form-login-password, #form-login-remember
+{
+	padding: 0px;
+	margin: 5px;
+}
+
+#content
+{
+	width: 550px;
+	float: left;
+	overflow: hidden;
+	border-top: #ffffff 3px solid;
+	background: url(../images/bordercontent_bg.png) repeat-y;
+}
+
+#content img
+{
+	padding: 3px;
+}
+
+#content_big img
+{
+	padding: 3px;
+}
+
+
+#content_big
+{
+	width: 744px;
+	float: left;
+	overflow: hidden;
+	border-top: #ffffff 5px solid;
+	background: url(../images/bordercontent_bg_big.png) repeat-y;
+}
+
+#content_big .componentheading
+{
+	height: 30px;
+	line-height: 22px;
+	padding-left: 10px;
+	color: #fff;
+	overflow: hidden;
+	font-weight: bold;
+	margin: 0;
+	font-size: 100%;
+	background: #FFFFFF url(../images/component_heading_big.png) no-repeat;
+}
+
+#content .componentheading
+{
+	height: 30px;
+	line-height: 22px;
+	padding-left: 10px;
+	color: #fff;
+	overflow: hidden;
+	font-weight: bold;
+	margin: 0;
+	font-size: 100%;
+	background: #FFFFFF url(../images/component_heading.png) no-repeat;
+}
+
+.contentpaneopen
+{
+	width: 100%;
+}
+
+.contentheading, .buttonheading
+{
+	width: 100%;
+	border-bottom: #cccccc dotted 1px;
+	font-weight: bold;
+	color: #3C6FAD;
+}
+
+.small
+{
+	font-size: 80%;
+	font-weight: bold;
+	background: url(../images/user_business.png) no-repeat left;
+	line-height: 1.5em;
+	padding-left: 2em;
+}
+
+.createdate
+{
+	font-size: 80%;
+	font-weight: bold;
+	background: url(../images/calendar.png) no-repeat left;
+	line-height: 1.5em;
+	padding-left: 2em;
+}
+
+.modifydate
+{
+	font-size: 80%;
+	font-weight: bold;
+	background: url(../images/calendar.png) no-repeat left;
+	line-height: 1.5em;
+	padding-left: 2em;
+}
+
+.article_column
+{
+	padding: 2px;
+}
+
+.button
+{
+	border: 1px solid #3C6FAD;
+	background: #ffffff;
+	font-size: 1em;
+}
+
+.button:hover
+{
+	background: #cccccc;
+	border: 1px solid #3C6FAD;
+	/*cursor: help;*/
+}
+
+
+.pagenav
+{
+	border: solid 1px #3C6FAD;
+	margin-left: 0.5em;
+	margin-right: 0.5em;
+	padding-left: 0.5em;
+	padding-right: 0.5em;
+}
+
+a.pagenav 
+{
+	color: #000000;
+	text-decoration:none;
+}
+
+a:hover.pagenav 
+{
+	text-decoration:none;
+	background-color:#cccccc;
+}
+
+
+
+#right
+{
+	width: 194px;
+	float: left;
+	border-top: #ffffff 1px solid;
+	/*background: url(../images/borderright.gif) repeat-y left;*/
+}
+
+#right h3
+{
+	color:#ffffff;
+	height: 30px;
+	line-height: 26px;
+	overflow: hidden;
+	font-size: 100%;
+	padding-left: 20px;
+	text-align: left;
+	background: url(../images/h3_right.png) no-repeat;
+}	
+
+#right .moduletable
+{
+	padding-bottom: 10px;
+	padding-left: 4px;
+	margin: 0;
+	text-align: center;
+}
+
+#right .moduletable_text
+{
+	padding-bottom: 10px;
+	padding-left: 4px;
+	margin: 0;
+}
+
+#right .moduletable table
+{
+	width: 90%;
+	text-align: left;
+	font-size: 90%;
+}
+
+#right .moduletable form
+{
+	margin: 0;
+	padding: 0;
+}
+
+#right .moduletable_text h3
+{
+	background: url(../images/h3_right_mt.png) no-repeat;
+	color: #3C6FAD;
+	height: 30px;
+	line-height: 26px;
+	overflow: hidden;
+	font-size: 100%;
+	padding-left: 20px;
+}
+
+#right .bannergroup_text
+{
+	padding: 5px;
+	overflow: hidden;
+}
+
+/*
+.bannergroup_text a
+{
+	color: #ffcc00;
+	font-weight: bold;
+}
+*/
+
+.bannerheader
+{
+	font-weight: bold;
+}
+
+.insideright
+{
+	padding-left: 0px;
+}
+
+/* --- RSS ---*/
+#syndicate
+{
+	float: right;
+	overflow: hidden;
+	display: block;
+	width: 17px;
+	height: 17px;
+	padding: 1px 5px;
+}
+
+#syndicate a
+{
+	text-decoration: none;
+	border: none;
+}
+
+#syndicate img
+{
+	text-decoration: none;
+	border: none;
+}
+
+/* --- Suchbox --- */
+#search
+{
+	float: right;
+	padding: 0 5px;
+	overflow: hidden;
+}
+
+#search .inputbox
+{
+	width: 120px;
+	height: 16px;
+	font-size: 12px;
+	border: #cccccc solid 1px;
+	background: #ffffff url(../images/lupe.png) no-repeat left;
+	padding-left: 20px;
+}
+/*--- Schriftgroesse --- */
+#fontsize
+{
+	float:right;
+	overflow: hidden;
+	display: block;
+	padding: 1px 5px;
+}
+
+#fontsize a, #fontsize img
+{
+	border: 0 none;
+}
+
+/* --- Zeit --- */
+#time
+{
+	float:left;
+	font-size: 80%;
+	display:block;
+	overflow: hidden;
+	color: #ffffff;
+	padding-top: 1px;
+}
+
+#time:hover
+{
+	cursor: help;
+	color: #cccccc;
+}
+
+/* --- Logo ---*/
+#logo
+{
+	padding: 4px 4px 0;
+	width: 380px;
+	overflow: hidden;
+	height: 80px;
+	float: left;
+}
+
+#logo-banner
+{
+	padding: 4px 4px 0;
+	width: 450px;
+	overflow: hidden;
+	height: 80px;
+	float: right;
+}
+
+/* --- Newsflash ---*/
+#news
+{
+	width: 332px;
+	height: 100px;
+	float: right;
+	overflow: hidden;
+	color: #ffffff;
+	line-height: 120%;
+	font-size: 80%;
+	max-height: 332px;
+}
+
+#news h3
+{
+	display: block;
+	/*border-bottom: #ffffff dashed 1px;*/
+	font-size: 1.5em;
+	line-height: 1.2em;
+	/*background: url(../images/news.png) no-repeat;
+	padding-left: 20px;*/
+}
+
+#news a
+{
+	color: #ffffff;
+}
+
+.newsinside
+{
+	padding: 20px;
+}
+
+
+#footer
+{
+	border-top: 3px solid #ffffff;
+	background: #000000 url(../images/footer_bg.png) repeat-x;
+	color: #ffffff;
+	float: left;
+	width: 100%;
+	overflow: hidden;
+}
+
+#footer h3
+{
+	font-size: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+#user1, #user2, #user5
+{
+	width: 300px;
+	float: left;
+	color: #ffffff;
+	padding: 10px;
+	overflow: hidden;
+}
+
+#footer a
+{
+	color: #cccccc;
+}
+
+#foot
+{
+	width: 100%;
+	color: #ffffff;
+	text-align: center;
+	float: left;
+}
+
+#user1 ul li, #user2 ul li, #user5 ul li
+{
+	list-style-image: url(../images/star.png);
+}
+
+#foot img
+{
+	padding: 10px;
+}
+
+#bread
+{
+	width: 100%;
+	float: left;
+	color: #ffffff;
+	background: #3C6FAD;
+	border-top: 3px solid #ffffff;
+	margin: 0;
+	padding: 0;
+	min-height: 30px;
+	line-height: 30px;
+}
+
+#bread h3
+{
+	display: inline;
+	padding-left: 10px;
+}
+
+#bread ul li, #bread ul
+{
+	list-style: none;
+	list-style-image: none;
+	display: inline;
+	margin: 0;
+	padding: 0;
+}
+
+#bread ul li a
+{
+	margin: 20px;
+	font-weight: bold;
+	font-size: 80%;
+}
+
+#bread a, bread a:hover
+{
+	color: #ffffff;
+	padding-right: 10px;
+	background: url(../images/bread_arrow.gif) no-repeat right;
+}
+
+.readon
+{
+	background: url(../images/accept.png) no-repeat left;
+	padding-left: 20px;
+	font-weight: bold;
+}
+
+.readon:hover
+{
+	text-decoration: none;
+}
+
+#right .moduletable
+{
+	padding-bottom: 10px;
+}
+
+#right .moduletable div
+{
+	margin-left: 5px;
+	margin-right: 10px;
+	overflow: hidden;
+}
+
+#right .moduletable ul
+{
+	margin: 0;
+	padding-left: 10px;
+	overflow: hidden;
+}
+
+.menu-nav, .menu-nav *, #mainlevel-nav, #mainlevel-nav *
+{
+	margin:			0;
+	padding:		0;
+	list-style:		none;
+}
+
+.menu-nav, #mainlevel-nav
+{
+	line-height:	1.0;
+}
+
+.menu-nav ul, #mainlevel-nav ul
+{
+	position:		absolute;
+	top:			-999em;
+	width:			10em; /* left offset of submenus need to match (see below) */
+}
+
+.menu-nav ul li, #mainlevel-nav ul li
+{
+	width:			100%;
+}
+.menu-nav li:hover, #mainlevel-nav li:hover
+{
+	visibility:		inherit; /* fixes IE7 'sticky bug' */
+}
+
+.menu-nav li, #mainlevel-nav li
+{
+	float:			left;
+	position:		relative;
+}
+
+.menu-nav a, #mainlevel-nav a
+{
+	display:		block;
+	position:		relative;
+}
+
+.menu-nav li:hover ul,
+#mainlevel-nav li:hover ul,
+{
+	color: #000000;
+	left:			0;
+	top:			2.5em; /* match top ul list item height */
+	z-index:		99;
+}
+
+.menu-nav, #mainlevel-nav
+{
+	float:			left;
+	margin-bottom:	1em;
+}
+
+.menu-nav a, #mainlevel-nav a
+{
+	padding: 		.73em 1em;
+	text-decoration:none;
+}
+
+.menu-nav a, .menu-nav a:visited, #mainlevel-nav a, #mainlevel-nav a:visited
+{ /* visited pseudo selector so IE6 applies text colour*/
+	color:			#fff;
+}
+
+.menu-nav li, #mainlevel-nav li
+{
+	background: url(../images/menu_top_seperator.gif) no-repeat right;
+}
+
+.menu-nav li:hover, .menu-nav a:focus, .menu-nav a:hover, .menu-nav a:active,
+#mainlevel-nav li:hover, #mainlevel-nav a:focus, #mainlevel-nav a:hover, #mainlevel-nav a:active
+{
+	color: #000000;
+	background: #ffffff;
+	outline:		0;
+}

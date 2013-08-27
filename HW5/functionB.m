@@ -1,0 +1,3 @@
+function [thisBValue]= functionB(option,thisStepSpace,currSpot,currTime) 
+thisBValue=-1*(option.Vol*option.Vol*thisStepSpace*thisStepSpace+...
+    option.InterestRate)*(option.Expiry*1.0/option.timeStep);

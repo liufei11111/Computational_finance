@@ -1,0 +1,9 @@
+function valueB= valueBarrierDOCall(option)
+sigmaSq=option.Vol*option.Vol;	 
+C1=option_BS(option.Spot,option.Strike,option.InterestRate,...
+    option.divident,option.Vol,option.Expiry);
+C2=option_BS(option.Barrier*option.Barrier/option.Spot,option.Strike,option.InterestRate,...
+    option.divident,option.Vol,option.Expiry);
+coefficient=power(option.Barrier/option.Spot,...
+    2*((option.InterestRate-option.divident)/sigmaSq)-1);
+valueB=C1-C2*coefficient;
